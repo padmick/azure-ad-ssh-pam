@@ -40,8 +40,8 @@ echo "Please provide your Azure Active Directory clientID...this is the ID of yo
 read aadClientID
 cp -f aad-login.js.orig aad-login.js
 apt-get update
-apt-get install npm
 apt-get install nodejs
+apt-get install npm
 apt-get --purge remove node
 if [ ! -f /usr/bin/node ] 
 then
